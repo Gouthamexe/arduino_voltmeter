@@ -1,3 +1,8 @@
+// Author :  Goutham S 
+// Github : https://github.com/Gouthamexe 
+// Time = 9:12:2023 DD:MM:YYYY
+
+
 #include<LiquidCrystal.h>
 
 LiquidCrystal lcd(7, 6, 8, 9, 10, 11);
@@ -7,34 +12,40 @@ void setup(){
  
 lcd.begin(16, 2); 
 
-lcd.print("S4 EEE ");
+lcd.print("S3 EEE ");
 
+delay(500);
+lcd.clear();
+lcd.print("Mini Project");
 delay(500);
 
 
+lcd.clear();
 lcd.print("By Goutham S");
 
 
-delay(500);
+delay(800);
 lcd.clear();
-lcd.print("By Jyothika");
-
-
-delay(500);
-lcd.clear();
-lcd.print("By Dhanupriya");
+lcd.print("Jyothika");
 
 
 delay(500);
 lcd.clear();
-lcd.print("By Josmi Thresya");
+lcd.print("Dhanupriya");
 
+
+delay(500);
 lcd.clear();
+lcd.print("Josmi Thresya");
+
 
 delay(500);
 
 lcd.clear();
 
+lcd.print("   :)  ");
+delay(1000);
+lcd.clear();
 lcd.print("Volt Meter");
 pinMode(A0, INPUT);
   Serial.begin(9600);
@@ -54,6 +65,6 @@ lcd.print("Voltage is  ");
   lcd.print(vol);
 
   delay(1000);
-//  lcd.clear();
+
 
 }
